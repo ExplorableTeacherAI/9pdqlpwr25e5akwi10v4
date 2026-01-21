@@ -136,7 +136,7 @@ export const HumanBodyDiagram = () => {
       <div className="relative">
         <svg
           viewBox="0 0 300 760"
-          className="w-64 h-auto md:w-80"
+          className="w-48 h-auto md:w-56"
           style={{ filter: "drop-shadow(0 4px 20px rgba(0,0,0,0.1))" }}
         >
           {/* Body outline for context */}

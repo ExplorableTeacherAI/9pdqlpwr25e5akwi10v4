@@ -4,6 +4,7 @@ import { FullWidthLayout } from "@/components/layouts";
 import { Hoverable } from "@/components/annotations";
 import { HumanBodyDiagram } from "./sections/HumanBodyDiagram";
 import { AnatomicalTerms } from "./sections/AnatomicalTerms";
+import { HeadNeckInteractive } from "./sections/HeadNeckDiagram";
 
 /**
  * Human Body Anatomy Lesson
@@ -71,6 +72,57 @@ export const sections: ReactElement[] = [
           These paired terms describe the relative positions of body structures. Mastering them is essential for precise anatomical communication.
         </p>
         <AnatomicalTerms />
+      </div>
+    </Section>
+  </FullWidthLayout>,
+
+  // Section 2: Head and Neck
+  <FullWidthLayout key="head-neck-header" maxWidth="xl">
+    <Section id="head-neck-title" padding="lg">
+      <div className="border-t border-border/30 pt-8">
+        <p className="text-sm font-medium tracking-wider uppercase mb-3" style={{ color: "hsl(175 70% 40%)" }}>
+          Section 2
+        </p>
+        <h2 className="text-3xl md:text-4xl font-bold mb-4">
+          Head and Neck
+        </h2>
+        <p className="text-lg text-muted-foreground max-w-2xl">
+          The head (<Hoverable tooltip="Latin term for head, encompassing the entire cranial region.">caput</Hoverable>) and neck (<Hoverable tooltip="Latin term for neck, the cervical region connecting the head to the trunk.">collum</Hoverable>) contain numerous anatomical regions essential for clinical examination and diagnosis.
+        </p>
+      </div>
+    </Section>
+  </FullWidthLayout>,
+
+  <FullWidthLayout key="head-neck-diagram" maxWidth="xl">
+    <Section id="head-neck-interactive" padding="lg">
+      <div className="rounded-2xl border border-border/50 bg-card/50 p-6">
+        <h3 className="text-xl font-semibold mb-2 text-center">Interactive Head & Neck Regions</h3>
+        <p className="text-muted-foreground text-center mb-6">
+          Click on the markers to explore each anatomical region with clinical notes
+        </p>
+        <HeadNeckInteractive />
+      </div>
+    </Section>
+  </FullWidthLayout>,
+
+  <FullWidthLayout key="head-neck-summary" maxWidth="lg">
+    <Section id="head-neck-key-points" padding="md">
+      <div className="prose prose-lg max-w-none">
+        <p className="text-foreground/90 leading-relaxed">
+          The head is divided into the{" "}
+          <Hoverable tooltip="The skull portion containing and protecting the brain.">cranium</Hoverable>{" "}
+          and the{" "}
+          <Hoverable tooltip="The facial skeleton, including the bones of the orbits, nose, and jaw.">viscerocranium (face)</Hoverable>
+          . Key surface landmarks include the{" "}
+          <Hoverable tooltip="The bony arch on the lateral aspect of the skull, formed by the temporal and zygomatic bones.">zygomatic arch</Hoverable>
+          , the{" "}
+          <Hoverable tooltip="The bony prominence at the back of the skull, also known as the inion.">external occipital protuberance</Hoverable>
+          , and the{" "}
+          <Hoverable tooltip="The point where the frontal, parietal, temporal, and sphenoid bones meet - the thinnest part of the skull.">pterion</Hoverable>
+          . The neck is clinically divided into anterior and posterior triangles by the{" "}
+          <Hoverable tooltip="A major neck muscle that allows head rotation and flexion, running from the mastoid process to the sternum and clavicle.">sternocleidomastoid muscle</Hoverable>
+          .
+        </p>
       </div>
     </Section>
   </FullWidthLayout>,

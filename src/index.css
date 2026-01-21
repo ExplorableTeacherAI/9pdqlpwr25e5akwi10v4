@@ -63,8 +63,16 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 189 100% 50%;
+    --primary: 200 85% 45%;
     --primary-foreground: 210 40% 98%;
+
+    /* Medical theme colors */
+    --medical-blue: 200 85% 45%;
+    --medical-teal: 175 70% 40%;
+    --medical-red: 0 70% 55%;
+    --medical-orange: 25 90% 55%;
+    --medical-green: 145 65% 40%;
+    --medical-purple: 265 60% 55%;
 
     --secondary: 210 40% 96%;
     --secondary-foreground: 222.2 84% 4.9%;
@@ -86,8 +94,9 @@ All colors MUST be HSL.
 
     /* Custom tokens for light mode */
     --glass-bg: 0 0% 100% / 0.8;
-    --gradient-primary: linear-gradient(135deg, hsl(189 100% 50%), hsl(270 60% 60%));
-    --gradient-subtle: linear-gradient(180deg, hsl(0 0% 100%), hsl(210 40% 96%));
+    --gradient-primary: linear-gradient(135deg, hsl(200 85% 45%), hsl(175 70% 40%));
+    --gradient-subtle: linear-gradient(180deg, hsl(0 0% 100%), hsl(200 30% 97%));
+    --gradient-medical: linear-gradient(135deg, hsl(200 85% 45%), hsl(175 70% 40%));
     --shadow-glow: 0 0 30px hsl(189 100% 50% / 0.2);
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   }
